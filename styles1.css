@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #490cf0;
+}
+
+body, #quoteInput {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    background-color: #f2d307;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer{
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: #f2d307;
+    font-weight: bold;
+}
+
+
+#quoteDisplay {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem+2px);
+    margin-right: calc(1rem+2px);
+}
+
+#quoteInput {
+    background-color: transparent;
+    border: 2px solid #ad9702;
+    outline : none;
+    width: 100%;
+    height: 8rem;
+    margin:auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+
+}
+
+#quoteInput:focus {
+    border-color:black;
+}
+
+h1 {
+    position: absolute;
+  top:100px;
+  height: 100px;
+}
+
+#submitBtn {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+  #submitBtn:hover {
+    background-color: #45a049;
+  }
+  #rating {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+  }
+  #advertisement {
+    display: none;
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .correct {
+    color: green;
+  }
+  .incorrect {
+    color: red;
+  }
